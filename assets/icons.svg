@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ic-ocean" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 14h18l-1.6 4.2H4.6L3 14z"/><path d="M6.4 14V8.5L9 6h6l2.6 2.5V14"/><path d="M9.2 6h5.6"/><path d="M2 18.5c1.6 1.1 3.2 1.1 4.8 0s3.2-1.1 4.8 0 3.2 1.1 4.8 0 3.2-1.1 4.8 0"/>
+  </symbol>
+  <symbol id="ic-air" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 15.6V13l-8-5V3.6a1.6 1.6 0 0 0-3.2 0V8l-8 5v2.6l8-2.4V19l-2 1.6V22l3.6-1 3.6 1v-1.5L13 19v-5.8l8 2.4z"/>
+  </symbol>
+  <symbol id="ic-customs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3l7 3v5c0 4.2-3 7.4-7 9-4-1.6-7-4.8-7-9V6l7-3z"/><path d="M9 11.5l2 2 4-4.2"/>
+  </symbol>
+  <symbol id="ic-project" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3l8 4.4v9.2L12 21l-8-4.4V7.4L12 3z"/><path d="M12 8v6 M9 11h6"/><path d="M3 12h2 M19 12h2"/>
+  </symbol>
+  <symbol id="ic-hazard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 4l9 16H3L12 4z"/><path d="M12 10v4 M12 17h.01"/>
+  </symbol>
+  <symbol id="ic-supply" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="5" cy="6" r="2.2"/><circle cx="19" cy="13" r="2.2"/><circle cx="5" cy="18" r="2.2"/><path d="M7 7.2l10 4.6 M7 16.8l10-3.4"/>
+  </symbol>
+  <symbol id="ic-machinery" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="3.2"/><path d="M12 3v3 M12 18v3 M3 12h3 M18 12h3 M5.2 5.2l2.1 2.1 M16.7 16.7l2.1 2.1 M18.8 5.2l-2.1 2.1 M7.3 16.7l-2.1 2.1"/>
+  </symbol>
+  <symbol id="ic-textile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 7h16 M4 17h16"/><path d="M6.5 7v10 M17.5 7v10"/><path d="M4 7c0-2.2 16-2.2 16 0 M4 17c0 2.2 16 2.2 16 0"/>
+  </symbol>
+  <symbol id="ic-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 11l1.6-4.2h10.8L19 11"/><path d="M3 11h18v4.5h-2"/><path d="M5.5 15.5H3V11"/><circle cx="7" cy="16" r="1.8"/><circle cx="17" cy="16" r="1.8"/><path d="M7.2 13.5h9.6"/>
+  </symbol>
+  <symbol id="ic-chem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9.5 3h5 M10.5 3v6L5.5 18a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3L13.5 9V3"/><path d="M8 15h8"/>
+  </symbol>
+  <symbol id="ic-crossborder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 4h2.2l2.4 12.2H19L21.5 7H6"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/>
+  </symbol>
+  <symbol id="ic-trade" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/>
+  </symbol>
+  <symbol id="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5 11-12"/></symbol>
+  <symbol id="ic-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15 M13 6l6 6-6 6"/></symbol>
+  <symbol id="ic-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3l3 1 2 4-1.6 1.2a12 12 0 0 0 5 5L17 13l4 2 1 3a2 2 0 0 1-2 2A17 17 0 0 1 4 5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="ic-wechat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4C5.1 4 2 6.7 2 10c0 1.8 1 3.4 2.6 4.5L4 17l3-1.6c.8.2 1.6.3 2.4.3.3 0 .6 0 .9-.1C9.6 16.4 9 15.1 9 13.6 9 8.9 12.9 5 17.7 5c.3 0 .6 0 .9.1C18.2 4.6 13.9 4 9 4z"/><path d="M22 13.4c0-2.8-2.7-5-6-5s-6 2.2-6 5 2.7 5 6 5c.7 0 1.4-.1 2-.3L20 19l-.5-2.1C21 16 22 14.8 22 13.4z"/><path d="M8 8.5h.01 M11 8.5h.01 M15.5 13h.01 M18.5 13h.01"/></symbol>
+  <symbol id="ic-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+  <symbol id="ic-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6 8.5-6"/></symbol>
+  <symbol id="ic-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></symbol>
+  <symbol id="ic-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.2 16.4C12 14 12 10 15.8 7.6"/></symbol>
+  <symbol id="ic-team" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 6.2a3 3 0 0 1 0 5.4 M17.5 14.2A5.5 5.5 0 0 1 20.5 19"/></symbol>
+  <symbol id="ic-global" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17 M12 3.5c2.5 2.5 2.5 14 0 17 M12 3.5c-2.5 2.5-2.5 14 0 17"/></symbol>
+  <symbol id="ic-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M7 7H4v6h6V7H7zm10 0h-3v6h6V7h-3z" opacity=".25"/></symbol>
+</svg>
