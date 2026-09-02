@@ -103,10 +103,9 @@ section{padding:72px 0}
 .hero .region{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:#9fb6cc;margin-bottom:26px;padding:6px 14px;border:1px solid rgba(255,255,255,.16);border-radius:999px}
 .hero .region .ico{width:16px;height:16px;color:var(--c-accent)}
 .hero .cta{display:flex;gap:14px;flex-wrap:wrap}
-/* Hero 右侧线性插画（集装箱船+航线，非AI照片） */
-.hero-art{position:relative;background:var(--c-navy-2);border:1px solid rgba(255,255,255,.10);border-radius:12px;padding:22px;color:#7fa7c2}
-.hero-art svg{width:100%;height:auto;display:block}
-.hero-art .cap{font-size:12.5px;color:#7fa7c2;margin-top:10px;text-align:center;letter-spacing:1px}
+/* Hero 右侧 Banner 图 */
+.hero-art{position:relative;border:1px solid rgba(255,255,255,.10);border-radius:12px;padding:8px;background:transparent;overflow:hidden}
+.hero-art img{width:100%;height:auto;display:block;border-radius:8px}
 
 /* 实力数据带：纯色块+浅边框，无玻璃拟态 */
 .stats{background:var(--c-white);border:1px solid var(--c-line);border-radius:var(--radius);margin-top:34px;display:grid;grid-template-columns:repeat(5,1fr);overflow:hidden}
