@@ -74,6 +74,7 @@ section{padding:72px 0}
 .sec-head{text-align:center;max-width:780px;margin:0 auto 44px}
 .sec-head .tag{display:inline-block;color:var(--c-accent);font-weight:700;letter-spacing:2px;font-size:12.5px;margin-bottom:10px}
 .sec-head h2{font-size:clamp(26px,3.4vw,34px);font-weight:800;color:var(--c-navy)}
+.sec-head h1{font-size:clamp(26px,3.4vw,34px);font-weight:800;color:var(--c-navy)}
 .sec-head p{color:var(--c-ink-2);margin-top:12px;font-size:16px}
 
 /* 栅格 */
@@ -306,9 +307,79 @@ section{padding:72px 0}
   .stats{grid-template-columns:1fr 1fr}
   .stats .item{border-right:none}
   .flow{grid-template-columns:repeat(2,1fr)}
-  .sec-head h2,.h2{font-size:25px}
+  .sec-head h2,.sec-head h1,.h2{font-size:25px}
   section{padding:50px 0}
   .split{grid-template-columns:1fr}
   .mob-cta{display:flex}
   body{padding-bottom:66px}
 }
+
+/* ===== V3.0 新增：导航下拉（物流服务） ===== */
+.has-dropdown{position:relative}
+.has-dropdown > a{display:inline-flex;align-items:center;gap:5px}
+.caret{font-size:10px;line-height:1;opacity:.8;transition:.2s;margin-left:1px}
+.dropdown{position:absolute;top:calc(100% + 2px);left:0;min-width:196px;background:var(--c-navy-2);border:1px solid rgba(255,255,255,.10);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.30);padding:8px 0;opacity:0;visibility:hidden;transform:translateY(6px);transition:.18s ease;z-index:70}
+.dropdown a{display:block;padding:11px 20px;color:#d2deea;font-weight:500;font-size:14.5px;white-space:nowrap}
+.dropdown a:hover{background:rgba(255,255,255,.07);color:#fff}
+.has-dropdown:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+.has-dropdown:hover .caret{transform:rotate(180deg)}
+@media (max-width:980px){
+  .has-dropdown:hover .dropdown{opacity:0;visibility:hidden;transform:translateY(6px)}
+}
+@media (max-width:760px){
+  .has-dropdown > a{width:100%;border-bottom:1px solid rgba(255,255,255,.10)}
+  .dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:none;border-left:1px solid rgba(255,255,255,.12);border-radius:0;background:transparent;padding:0 0 6px 14px;margin:0 0 4px}
+  .dropdown a{padding:11px 0;color:#c3d4e3}
+  .caret{position:absolute;right:0}
+}
+
+/* ===== V3.0 新增：表单隐私同意框 ===== */
+.agree{display:flex;align-items:flex-start;gap:9px;margin:4px 0 16px;font-size:13px;color:#bcd0e2;line-height:1.6}
+.agree input[type=checkbox]{width:auto;flex:none;margin-top:3px;accent-color:var(--c-accent);cursor:pointer}
+.agree a{color:#9fd0e6;text-decoration:underline}
+.agree a:hover{color:#fff}
+
+/* ===== V3.0 新增：占位图 / 图片框 ===== */
+.ph{background:#dfe8ef;border-radius:var(--radius);overflow:hidden;position:relative}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph-label{position:absolute;left:10px;bottom:10px;font-size:12px;color:#7c8b99;background:rgba(255,255,255,.7);padding:3px 9px;border-radius:999px}
+
+/* ===== V3.0 新增：资质/证据条 ===== */
+.evi{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.evi .ec{background:var(--c-white);border:1px solid var(--c-line);border-radius:var(--radius);padding:20px;text-align:center;height:100%}
+.evi .ec .n{font-size:24px;font-weight:800;color:var(--c-navy)}
+.evi .ec .l{font-size:13px;color:var(--c-ink-2);margin-top:6px}
+@media (max-width:760px){.evi{grid-template-columns:1fr 1fr}}
+
+/* ===== V3.0 新增：客户类型卡 ===== */
+.sol-card{border:1px solid var(--c-line);border-radius:var(--radius);padding:26px;background:#fff;transition:.22s;height:100%}
+.sol-card:hover{border-color:var(--c-brand);box-shadow:var(--shadow-s);transform:translateY(-3px)}
+.sol-card h3{font-size:18px;color:var(--c-navy);margin-bottom:8px}
+.sol-card .q{font-size:14px;color:var(--c-brand);font-weight:600;margin:14px 0 6px}
+.sol-card ul{list-style:none;margin-top:6px}
+.sol-card ul li{font-size:14px;color:var(--c-ink-2);padding:5px 0 5px 20px;position:relative}
+.sol-card ul li::before{content:"";position:absolute;left:0;top:12px;width:7px;height:7px;border-radius:50%;background:var(--c-accent)}
+
+/* ===== V3.0 新增：404 页面 ===== */
+.err{text-align:center;padding:90px 0}
+.err .code{font-size:clamp(64px,12vw,120px);font-weight:800;color:var(--c-navy);line-height:1}
+.err h1{font-size:26px;color:var(--c-navy);margin:14px 0 8px}
+.err p{color:var(--c-ink-2);margin-bottom:24px}
+/* ===== V3.0 新增：隐私/法律正文排版 ===== */
+.legal-article{max-width:860px;margin:0 auto;background:#fff;border:1px solid var(--c-line);border-radius:var(--radius);padding:38px 44px}
+.legal-article h2{font-size:22px;color:var(--c-navy);margin:32px 0 12px;padding-bottom:8px;border-bottom:2px solid var(--c-lightblue)}
+.legal-article h2:first-of-type{margin-top:6px}
+.legal-article h3{font-size:17px;color:var(--c-navy-2);margin:22px 0 8px}
+.legal-article p,.legal-article li{font-size:15px;line-height:1.85;color:var(--c-ink-2);margin-bottom:10px}
+.legal-article ul{margin:6px 0 14px;padding-left:22px;list-style:disc}
+.legal-article ul li{margin-bottom:6px}
+.legal-article a{color:var(--c-brand);text-decoration:underline}
+.legal-article .updated{font-size:13px;color:#97a8b6;margin-bottom:18px}
+.legal-article .toc{background:var(--c-bg);border:1px solid var(--c-line);border-radius:var(--radius);padding:16px 22px;margin-bottom:26px}
+.legal-article .toc b{display:block;font-size:14px;color:var(--c-navy);margin-bottom:8px}
+.legal-article .toc a{display:inline-block;margin:3px 14px 3px 0;text-decoration:none;font-size:14px}
+.legal-article .note{background:#fff8e8;border:1px solid #ffe2a8;border-radius:10px;padding:14px 18px;font-size:14px;color:#8a6d1f;margin:14px 0}
+.legal-article strong{color:var(--c-ink)}
+@media (max-width:760px){.legal-article{padding:26px 20px}}
+
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
