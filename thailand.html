@@ -19,38 +19,41 @@
 </head>
 <body>
 <!-- TODO_CONTACT_CONFIRM: 主电话 0571-82668188 沿用集团公开口径，待最终确认。 -->
-<div class="topbar"><div class="container"><span>杭州达升坤道国际货运代理有限公司 · 达升物流旗下</span><span><a href="tel:0571-82668188">服务热线：0571-82668188</a></span></div></div>
 <header class="nav">
   <div class="container">
     <a class="logo" href="index.html"><span class="mark">达</span><span class="txt"><b>达升坤道</b><span>HEADWIN KUNDAO LOGISTICS</span></span></a>
-    <nav class="menu" id="menu">
+            <nav class="menu" id="menu">
       <a href="index.html">首页</a>
       <div class="has-dropdown">
         <a href="sea.html">物流服务 <span class="caret">▾</span></a>
-        <div class="dropdown">
-          <a href="sea.html">国际海运</a>
-          <a href="air.html">国际空运</a>
-          <a href="customs.html">专业报关</a>
-          <a href="sea.html#project">项目物流</a>
+        <div class="dropdown mega">
+          <a href="sea.html"><b>国际海运</b><span>整柜 / 拼箱 / 特种柜</span></a>
+          <a href="air.html"><b>国际空运</b><span>普货 / 特货 / 门到门</span></a>
+          <a href="customs.html"><b>专业报关</b><span>单证预审 / 归类支持</span></a>
+          <a href="sea.html#project"><b>项目物流</b><span>大件 / 特种货物运输</span></a>
         </div>
       </div>
-      <a href="thailand.html" class="active">东南亚专线</a>
-      <a href="routes.html">全球服务网络</a>
+      <a href="thailand.html" active>东南亚专线</a>
+      <a href="routes.html">全球网络</a>
       <a href="industries.html">解决方案</a>
-      <a href="cases.html">服务案例</a>
-      <a href="about.html">关于达升</a>
-      <a href="contact.html" class="btn btn-primary">获取物流方案</a>
+      <a href="cases.html">案例</a>
+      <a href="about.html">关于我们</a>
+      <a href="contact.html" class="btn btn-primary">获取方案</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
   </div>
 </header>
 <div class="crumb"><div class="container"><a href="index.html">首页</a><span>›</span>东南亚专线 · 泰国门到门</div></div>
 
-<section class="page-banner">
+<section class="page-banner has-art">
   <div class="container">
-    <h1>泰国门到门物流专线</h1>
-    <p>面向浙江出口泰国及东南亚的制造企业、贸易商与跨境电商，提供从国内提货到泰国末端派送的衔接方案，可按项目提供 DAP / DDP 等现行贸易条款咨询。</p>
-    <div class="cta" style="margin-top:18px"><a href="contact.html" class="btn btn-primary">咨询泰国线路</a><a href="routes.html" class="btn btn-ghost-w">查看全球服务网络</a></div>
+    <div class="pb-copy">
+          <h1>泰国门到门物流专线</h1>
+          <p>面向浙江出口泰国及东南亚的制造企业、贸易商与跨境电商，提供从国内提货到泰国末端派送的衔接方案，可按项目提供 DAP / DDP 等现行贸易条款咨询。</p>
+          <div class="cta" style="margin-top:18px"><a href="contact.html" class="btn btn-primary">咨询泰国线路</a><a href="routes.html" class="btn btn-ghost-w">查看全球服务网络</a></div>
+  
+    </div>
+    <div class="pb-art"><img src="assets/img-thailand.jpg" alt="东南亚港口物流场景" loading="lazy"></div>
   </div>
 </section>
 
@@ -65,7 +68,7 @@
       </div>
       <div class="ph" style="min-height:300px">
         <!-- TODO_IMAGE: 泰国/东南亚线路示意图或真实业务场景照片 -->
-        <img src="assets/placeholder.jpg" alt="泰国门到门线路" loading="lazy">
+        <img src="assets/img-thailand.jpg" alt="泰国门到门线路" loading="lazy">
         <span class="ph-label">线路示意 · 待替换真实素材</span>
       </div>
     </div>
@@ -138,5 +141,18 @@
   <a class="c-q" href="contact.html"><svg class="ico"><use href="assets/icons.svg#ic-arrow"></use></svg>询价</a>
 </div>
 <script>document.getElementById('navToggle').addEventListener('click',function(){document.getElementById('menu').classList.toggle('open');});</script>
+<script>
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  var sel='.card,.sol-card,.ind-card,.route-card,.case-card,.post,.faq,.media,.flow .step,.stats .item,.evi .ec,.net-card,.panel,.cert';
+  var els=[].slice.call(document.querySelectorAll(sel));
+  var vh=window.innerHeight;
+  els=els.filter(function(e){var r=e.getBoundingClientRect();return r.top>vh*0.92;});
+  if(!els.length)return;
+  els.forEach(function(e){e.classList.add('reveal');});
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.06,rootMargin:'0px 0px -30px 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
 </body>
 </html>
