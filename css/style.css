@@ -84,7 +84,7 @@ section{padding:var(--sec) 0}
 .nav{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
 .nav .container{display:flex;align-items:center;justify-content:space-between;height:80px}
 .logo{display:flex;align-items:center;gap:12px;color:var(--navy)}
-.logo .mark{width:38px;height:38px;border-radius:4px;background:var(--navy);display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;font-weight:800;flex:none}
+.logo .mark-img{width:40px;height:40px;object-fit:contain;display:block;flex:none}
 .logo .txt b{font-size:17px;letter-spacing:.4px;color:var(--navy)}
 .logo .txt span{display:block;font-size:10px;color:#8b98a5;letter-spacing:1.1px;font-weight:500}
 .menu{display:flex;gap:30px;align-items:center}
@@ -133,7 +133,7 @@ section{padding:var(--sec) 0}
 /* ===== Hero（首页）：全宽实景背景 Banner，左文叠加 ===== */
 .hero{position:relative;background:var(--navy);color:#fff;padding:0;overflow:hidden;isolation:isolate}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:60% 46%;display:block}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;display:block}
 /* 左侧深色压暗，保证文字可读；右侧保留实景质感 */
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,37,64,.95) 0%,rgba(10,37,64,.92) 34%,rgba(10,37,64,.80) 56%,rgba(10,37,64,.46) 78%,rgba(10,37,64,.26) 100%)}
 .hero .container{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;min-height:700px;padding-top:104px;padding-bottom:104px}
@@ -161,6 +161,12 @@ section{padding:var(--sec) 0}
 .page-banner .pb-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .page-banner .pb-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .page-banner .pb-tags span{font-size:13.5px;color:#c6d5e3;border:1px solid rgba(255,255,255,.18);border-radius:2px;padding:6px 13px}
+/* 全屏背景 Banner 变体：图片铺满 + 左深右浅遮罩（文字结构不变） */
+.page-banner.bg .pb-bg{position:absolute;inset:0;z-index:0}
+.page-banner.bg .pb-bg img{width:100%;height:100%;object-fit:cover;display:block}
+.page-banner.bg::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,37,64,.95) 0%,rgba(10,37,64,.90) 30%,rgba(10,37,64,.62) 62%,rgba(10,37,64,.34) 100%)}
+.page-banner.bg .container{position:relative;z-index:2;padding-top:96px;padding-bottom:96px;min-height:440px;display:flex;align-items:center}
+.page-banner.bg .pb-copy{max-width:760px}
 
 /* ===== 核心服务：1 大 3 小 ===== */
 .svc{display:grid;grid-template-columns:1.42fr 1fr;gap:22px}
@@ -281,6 +287,9 @@ section{padding:var(--sec) 0}
 /* ===== 资质横排（图文） ===== */
 .certs{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
 .cert .ph,.cert .media,.cert .cert-ph{height:230px;margin-bottom:18px}
+.cert .media{border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden}
+.cert .media img{width:100%;height:100%;object-fit:contain;display:block;padding:10px}
+.cert .media::after{display:none}
 /* 证书位占位（真实扫描件到位前使用，不使用无关图片充数） */
 .cert-ph{border:1px dashed #c6d2dc;border-radius:var(--radius);background:var(--off);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#93a3b0}
 .cert-ph .ico{width:34px;height:34px;stroke:#a9b7c2}
@@ -536,6 +545,7 @@ section{padding:var(--sec) 0}
   .container{padding:0 18px}
   section{padding:56px 0}
   .nav .container{height:64px}
+  .logo .mark-img{width:32px;height:32px}
   .nav-toggle{display:block}
   .menu{position:fixed;inset:64px 0 auto 0;background:#fff;flex-direction:column;gap:0;padding:8px 20px 20px;border-bottom:1px solid var(--line);box-shadow:0 16px 30px rgba(10,37,64,.08);transform:translateY(-140%);transition:transform .3s ease;align-items:stretch}
   .menu.open{transform:translateY(0)}
@@ -550,12 +560,15 @@ section{padding:var(--sec) 0}
   .hero .container{min-height:0;padding-top:70px;padding-bottom:64px}
   .hero .region{font-size:11.5px;letter-spacing:.12em}
   .hero p.sub{font-size:15.5px;margin-bottom:26px}
-  .hero-bg img{object-position:64% 50%}
+  .hero-bg img{object-position:56% 50%}
   .hero-bg::after{background:linear-gradient(180deg,rgba(10,37,64,.94) 0%,rgba(10,37,64,.88) 46%,rgba(10,37,64,.70) 72%,rgba(10,37,64,.92) 100%)}
   .hero-tagline{position:static;margin-top:28px;font-size:13px}
   .page-banner .container{padding-top:48px;padding-bottom:48px}
   .page-banner.has-art .container{min-height:0}
   .pb-art{min-height:220px}
+  .page-banner.bg .container{min-height:320px;padding-top:72px;padding-bottom:72px}
+  .page-banner.bg::after{background:linear-gradient(180deg,rgba(10,37,64,.94) 0%,rgba(10,37,64,.86) 52%,rgba(10,37,64,.72) 100%)}
+  .page-banner.bg .pb-bg img{object-position:62% 50%}
   .cols-2,.cols-3,.cols-4,.evi,.certs{grid-template-columns:1fr}
   .footer .cols{grid-template-columns:1fr}
   .statband .row{grid-template-columns:1fr 1fr;gap:26px 0}
